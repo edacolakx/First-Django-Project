@@ -1,0 +1,5 @@
+<div class="list-group">
+    {% for aabc in categories %}
+            <a href="{% url "red" aabc.slug %}" class="list-group-item list-group-item-action">{{aabc.name}}</a>
+            {% endfor %}
+</div>

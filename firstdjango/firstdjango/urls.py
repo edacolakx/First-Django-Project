@@ -24,6 +24,8 @@ from django.http import HttpResponse
 
 
 urlpatterns = [
+    path('',include('pages.urls')),
     path('client/',include('kurslar.urls')),
+    path('iletisimm/',include('iletisim.urls')),
     path('admin/', admin.site.urls),
 ]
